@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Notification Bell -->
+    <div id="notification-bar">
+        <div id="notification-icon" onclick="showNotifications()">
+            <span>🔔</span>
+            <span id="notification-count">0</span>
+        </div>
+    </div>
+
+    <!-- Login Section -->
+    <div id="login-section">
+        <button onclick="googleLogin()">Login with Google</button>
+    </div>
+
+    <!-- Home Page Content -->
+    <div id="home-page" style="display: block;">
+        <h1>Select Your Game</h1>
+        <button onclick="showTournaments('freefire')">Free Fire</button>
+        <button onclick="showTournaments('bgmi')">BGMI</button>
+        <button onclick="goToWallet()">Wallet</button>
+    </div>
+
+    <!-- Tournament List -->
+    <div id="tournament-list" style="display: none;">
+        <h2>Tournaments</h2>
+        <ul id="tournament-items"></ul>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Wallet System -->
+    <div id="wallet-page" style="display: none;">
+        <h3>Your Wallet: ₹<span id="wallet-balance">0</span></h3>
+        <button onclick="addCash()">Add Cash</button>
+        <button onclick="goBackHome()">Back to Home</button>
+    </div>
+
+    <!-- UID and Game Name Modal -->
+    <div id="uid-modal" style="display: none;">
+        <h3>Enter Your UID and Game Name</h3>
+        <input type="number" id="uid-input" placeholder="Enter UID (numbers only)">
+        <input type="text" id="game-name-input" placeholder="Enter Game Name">
+        <button onclick="submitUID()">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#notification-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#notification-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#notification-count {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#login-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#home-page button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#tournament-list {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#wallet-page {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#wallet-page button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#uid-modal {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#uid-modal input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
